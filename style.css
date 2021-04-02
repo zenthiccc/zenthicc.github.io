@@ -39,6 +39,7 @@
     -moz-text-fill-color: transparent;
     display: flex;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -190,7 +191,7 @@
     }
   }
   
-  /* Hero Section */
+  /* Main Section */
   #home{
     padding: 200px 0;
     background: #000000;
@@ -522,6 +523,7 @@
   }
   #p1{
       grid-area: p1;
+      background: url(./img/todolist-blurred.jpg);
   }
 
   #p2{
@@ -561,18 +563,34 @@
   
   .projects__card h2 {
     text-align: center;
+    background-color: red;
+    background-image: linear-gradient(to right, #ff0844 0%, red 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
   }
   
   .projects__card p {
+    background-color: red;
+    background-image: linear-gradient(to right, #ff0844 0%, red 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     text-align: center;
     margin-top: 24px;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bold;
   }
   
   .projects__btn {
     display: flex;
     justify-content: center;
     margin-top: 16px;
+    transition: 0.3s ease-in;
   }
   
   .lolol{
@@ -585,9 +603,10 @@
     padding: 14px 24px;
     border: none;
     outline: none;
+    background: black;
     border-radius: 4px;
-    background: #131313;
     font-size: 1rem;
+    transition: 0.3s ease-in;
   }
   
   .projects__card button:hover {
@@ -597,7 +616,12 @@
   .projects__card:hover {
     transform: scale(1.075);
     transition: 0.3s ease-in;
-    cursor: pointer;
+  }
+
+  .projects__card button:hover{
+    background-color: red;
+    transform: scale(1.075);
+    transition: 0.3s ease-in;
   }
   
   @media screen and (max-width: 1300px) {
