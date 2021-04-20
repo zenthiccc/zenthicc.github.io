@@ -593,7 +593,7 @@
     transition: 0.3s ease-in;
   }
   
-  .lolol{
+  .button-twice{
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
